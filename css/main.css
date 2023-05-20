@@ -125,3 +125,54 @@ textarea::-webkit-scrollbar-thumb {
     background-color: #bb3535;
     color: #fff;
 }
+
+
+/* Style untuk desktop */
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.col-lg-4 .product-item{
+    width: fit-content;
+}
+
+
+/* Style untuk tablet */
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+    .modal-content{
+        position: relative;
+    }
+    .modal-content{
+        position: absolute;
+        top: 100%;
+        right: -30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        transform: scale(0.5);
+    }
+  }
+  
+  /* Style untuk smartphone */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 0 5px;
+    }
+    .modal-content{
+        position: relative;
+    }
+    .modal-content{
+        position: absolute;
+        top: -30%;
+        right: -30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        transform: scale(0.5);
+    }
+  }
