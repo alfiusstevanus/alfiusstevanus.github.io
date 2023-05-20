@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="sticky sticky-top">
+        <nav class="navbar navbar-expand-lg bg-yellow border-4 mb-3 border-bottom border-dark">
+            <div class="container">
+                <a class="navbar-brand mr-10" href="index.php"><img src="images/icon.png" width="30" class="mr-20"
+                        alt="icon.png">My Portfolio</a>
+            </div>
+        </nav>
+    </header>
+    <div class="modal fade z-index-9" id="logout" tabindex="-1" aria-labelledby="logoutLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutLabel">Logout!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Anda yakin ingin Logout?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger mt-3" data-bs-dismiss="modal">Tidak</button>
+                    <a role="submit" class="btn btn-success mt-3" href="index.php?logout=1">Ya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container menu-list">
+        <div class="border-3 border-bottom border-dark welcoming py-3 mb-2">
+            <div class="d-flex row align-items-center">
+                <h1 class="fs-2 mb-2">Siapakah saya?</h1>
+
+                <div class="content col-md-4">
+                    <img class="d-absolute rounded-circle m-20 py-4" src="images/Alfius-Stevanus.jpg"
+                        alt="Alfius-Stevanus.jpg" style="width: 250px;">
+                </div>
+                <div class="content col-md-5">
+                    <p class="bg-yellow p-3 rounded-4 text-dark my-shadow">
+                        Perkenalkan nama saya <span class="fw-bold">Alfius-Stevanus Ginting</span>, saya merupakan
+                        seorang pria berumur 20 tahun asal Kota Bandung. Saya merupakan seorang Mahasiswa di Institut
+                        Teknologi Nasional Bandung. Saya memiliki hobi mendengarkan musik. Saya memiliki beberapa
+                        keahlian, keahlian - keahlian tersebut akan saya tampilkan dibawah ini.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex row align-items-center">
+            <div class="col-md-2 ">
+                <h1 class="fs-2 py-3 mb-5">My Skills</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="product-item mb-4 bg-yellow p-4 rounded-4 scale" data-bs-toggle="modal"
+                    data-bs-target="#infoSkill1">
+                    <div class="row justify-content-evenly align-items-center">
+                        <div>
+                            <h4 class="text-center text-dark form-control">Bahasa C</h4>
+                        </div>
+                        <div>
+                            <img src="images/Bahasa-C.jpg" class="ml-2" width="265px" alt="Bahasa C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="product-item mb-4 bg-yellow p-4 rounded-4 scale" data-bs-toggle="modal"
+                    data-bs-target="#infoSkill2">
+                    <div class="row justify-content-evenly align-items-center">
+                        <div>
+                            <h4 class="text-center text-dark form-control">Java</h4>
+                        </div>
+                        <div>
+                            <img src="images/Java.jpg" class="ml-2" width="265px" alt="Java">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="product-item mb-4 bg-yellow p-4 rounded-4 scale" data-bs-toggle="modal"
+                    data-bs-target="#infoSkill3">
+                    <div class="row justify-content-evenly align-items-center">
+                        <div>
+                            <h4 class="text-center text-dark form-control">PHP</h4>
+                        </div>
+                        <div>
+                            <img src="images/Php.jpg" class="ml-2" width="265px" alt="PHP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="product-item mb-4 bg-yellow p-4 rounded-4 scale" data-bs-toggle="modal"
+                    data-bs-target="#infoSkill4">
+                    <div class="row justify-content-evenly align-items-center">
+                        <div>
+                            <h4 class="text-center text-dark form-control">Editing Video</h4>
+                        </div>
+                        <div>
+                            <img src="images/Editing-Video.jpg" class="ml-2" width="265px" alt="Editing Video">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="product-item mb-4 bg-yellow p-4 rounded-4 scale" data-bs-toggle="modal"
+                    data-bs-target="#infoSkill5">
+                    <div class="row justify-content-evenly align-items-center">
+                        <div>
+                            <h4 class="text-center text-dark form-control">Bermain Gitar</h4>
+                        </div>
+                        <div>
+                            <img src="images/Bermain-Gitar.jpg" class="ml-2" width="265px" alt="Bermain Gitar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="product-item mb-4 bg-yellow p-4 rounded-4 scale" data-bs-toggle="modal"
+                    data-bs-target="#infoSkill6">
+                    <div class="row justify-content-evenly align-items-center">
+                        <div>
+                            <h4 class="text-center text-dark form-control">Bermain Games</h4>
+                        </div>
+                        <div>
+                            <img src="images/Bermain-Games.jpg" class="ml-2" width="265px" alt="Bermain Games">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal start -->
+        <div class="modal fade" id="infoSkill1" tabindex="-1" aria-labelledby="infoSkillLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content info-skill">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoSkillLabel">Info Skill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row container row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <div>
+                                    <h5>Keahlian:</h5>
+                                    <p class="form-control my-3">Bahasa C</p>
+                                </div>
+                                <div>
+                                    <h5>Deskripsi:</h5>
+                                    <textarea name="deskripsi" class="form-control my-3 no-resize" readonly
+                                        rows="7">Di semester 2 kemarin saya sudah belajar banyak mengenai bahasa C, sehingga bisa dibilang kemampuan bahasa C saya cukup baik. Saya dapat melakukan beberapa Algoritma sederhana yang bisa diterapkan di bahasa C, mulai dari Looping, Sorting, Searching, dan program sederhana lainnya.</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/Bahasa-C.jpg" width="265px" alt="java">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mt-3"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="infoSkill2" tabindex="-1" aria-labelledby="infoSkillLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content info-skill">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoSkillLabel">Info Skill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row container row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <div>
+                                    <h5>Keahlian:</h5>
+                                    <p class="form-control my-3">java</p>
+                                </div>
+                                <div>
+                                    <h5>Deskripsi:</h5>
+                                    <textarea name="deskripsi" class="form-control my-3 no-resize" readonly
+                                        rows="7">Di semester 3 kemarin saya sudah belajar banyak mengenai bahasa JAVA, sehingga bisa dibilang kemampuan bahasa JAVA saya cukup baik. Saya dapat melakukan Create, Read, Update, dan Delete menggunakan bahasa JAVA dan juga beberapa method lainnya. Saya juga sudah bisa membuat aplikasi berbasis GUI dengan menggunakan Java Swing.</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/Java.jpg" width="265px" alt="java">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mt-3"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="infoSkill3" tabindex="-1" aria-labelledby="infoSkillLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content info-skill">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoSkillLabel">Info Skill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row container row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <div>
+                                    <h5>Keahlian:</h5>
+                                    <p class="form-control my-3">PHP</p>
+                                </div>
+                                <div>
+                                    <h5>Deskripsi:</h5>
+                                    <textarea name="deskripsi" class="form-control my-3 no-resize" readonly
+                                        rows="7">Di semester 4 ini saya sudah belajar banyak mengenai bahasa PHP, sehingga bisa dibilang kemampuan bahasa PHP saya cukup baik. Saya dapat melakukan Create, Read, Update, dan Delete menggunakan bahasa PHP dan juga beberapa method lainnya.</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/Php.jpg" width="265px" alt="java">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mt-3"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="infoSkill4" tabindex="-1" aria-labelledby="infoSkillLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content info-skill">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoSkillLabel">Info Skill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row container row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <div>
+                                    <h5>Keahlian:</h5>
+                                    <p class="form-control my-3">Editing Video</p>
+                                </div>
+                                <div>
+                                    <h5>Deskripsi:</h5>
+                                    <textarea name="deskripsi" class="form-control my-3 no-resize" readonly
+                                        rows="7">Saya memiliki keahlian tersendiri tentang edit video. Meskipun mungkin saya belum expert, tetapi saya bisa membuat video menarik selama kompleksitasnya masih sederhana.</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/Editing-Video.jpg" width="265px" alt="java">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mt-3"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="infoSkill5" tabindex="-1" aria-labelledby="infoSkillLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content info-skill">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoSkillLabel">Info Skill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row container row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <div>
+                                    <h5>Keahlian:</h5>
+                                    <p class="form-control my-3">Bermain Gitar</p>
+                                </div>
+                                <div>
+                                    <h5>Deskripsi:</h5>
+                                    <textarea name="deskripsi" class="form-control my-3 no-resize" readonly
+                                        rows="7">Untuk bermain gitar ini sebenarnya bisa dibilang hanya sekadar bisa saja, saya tidak expert, saya hanya memainkannya jika ada waktu luang. Tetapi mungkin bisa dimasukan kedalam skill saya, biar pas 6 aja :v</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/Bermain-Gitar.jpg" width="265px" alt="java">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mt-3"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="infoSkill6" tabindex="-1" aria-labelledby="infoSkillLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content info-skill">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoSkillLabel">Info Skill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row container row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <div>
+                                    <h5>Keahlian:</h5>
+                                    <p class="form-control my-3">Bermain Games</p>
+                                </div>
+                                <div>
+                                    <h5>Deskripsi:</h5>
+                                    <textarea name="deskripsi" class="form-control my-3 no-resize" readonly
+                                        rows="7">Mungkin masih ada banyak skill saya yang lain, tetapi saya akan memasukan ini untuk yang terakhir (sementara) yaitu bermain games. Games saya sudah saya mainkan mungkin tidak sebanyak orang lain, tetapi biasanya sedikit games yang saya mainkan tersebut sangat sangat saya kuasai dengan baik.</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/Bermain-Games.jpg" width="265px" alt="java">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mt-3"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.js"></script>
+
+</html>
